@@ -1,0 +1,214 @@
+.slider {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+}
+
+
+.slide img {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* @media screen and (min-width: 600px) {
+    .slide img {
+        width: 100%;
+        height: 100%;
+    }
+} */
+
+.current {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.content {
+    position: absolute;
+    top: 23rem;
+    left: 5rem;
+    opacity: 0;
+    width: 50%;
+    color: #fff;
+    padding: 3rem;
+    border-radius: 7px;
+    background: rgba(0, 0, 0, 0.3);
+    animation: slide-up 1s ease 0.5s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes slide-up {
+    0% {
+        visibility: visible;
+        top: 23rem;
+    }
+
+    100% {
+        visibility: visible;
+        top: 17rem;
+    }
+}
+
+
+.content>* {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.current .content {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.5s ease;
+}
+
+.arrow {
+    border: 2px solid white;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 999;
+}
+
+.arrow:hover {
+    background-color: #fff;
+    color: #777;
+}
+
+.next {
+    top: 50%;
+    right: 1.5rem;
+}
+
+.prev {
+    top: 50%;
+    left: 1.5rem;
+}
+
+hr {
+    width: 100%;
+    overflow: visible;
+    border-style: solid;
+    border-color: #b62845;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+.fa-icon {
+    font-size: 2.5em;
+    color: #fff;
+    right: 50px;
+    bottom: 30px;
+    opacity: .5;
+    position: absolute;
+    z-index: 4;
+}
+
+.fa-icon:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+@media screen and (max-width:1600px) {
+    .content {
+        top: 18rem;
+    }
+
+    @keyframes slide-up {
+        0% {
+            visibility: visible;
+            top: 18rem;
+        }
+
+        100% {
+            visibility: visible;
+            top: 12rem;
+        }
+    }
+}
+
+@media screen and (max-width:900px) and (min-width:768px) {
+    .content {
+        width: 80%;
+        top: 18rem;
+    }
+
+    @keyframes slide-up {
+        0% {
+            visibility: visible;
+            top: 18rem;
+        }
+
+        100% {
+            visibility: visible;
+            top: 12rem;
+        }
+    }
+}
+
+@media screen and (max-width: 769px) and (min-width:600px) {
+    .content {
+        width: 80%;
+        padding: 1.5rem;
+        left: 4rem;
+        top: 14rem;
+    }
+
+    @keyframes slide-up {
+        0% {
+            visibility: visible;
+            top: 14rem;
+        }
+
+        100% {
+            visibility: visible;
+            top: 8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .content {
+        width: 80%;
+        padding: 4px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 15rem;
+    }
+
+    .next {
+        right: 2px;
+    }
+
+    .prev {
+        left: 2px;
+    }
+
+    @keyframes slide-up {
+        0% {
+            visibility: visible;
+            top: 15rem;
+        }
+
+        100% {
+            visibility: visible;
+            top: 9rem;
+        }
+    }
+}
