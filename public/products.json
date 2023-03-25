@@ -192,7 +192,7 @@
         "description": "This is an awesome product for young woman. It's make you different look. The collection is limited. We are offering 25% discount. Money back granted.",
         "price": 650,
         "currency": "BDT",
-        "category": "Hand Bag",
+        "category": "Hand-bag",
         "brand": "Queen fashion",
         "image": "../src/assets/allProducts/handBag/bag1.jpg",
         "features": "Long lasting and color granted. Soft and 100% original."
@@ -203,7 +203,7 @@
         "description": "This is an awesome product for young woman. It's make you different look. The collection is limited. We are offering 25% discount. Money back granted.",
         "price": 650,
         "currency": "BDT",
-        "category": "Hand Bag",
+        "category": "Hand-bag",
         "brand": "Queen fashion",
         "image": "../src/assets/allProducts/handBag/bag2.jpg",
         "features": "Long lasting and color granted. Soft and 100% original."
@@ -214,7 +214,7 @@
         "description": "This is an awesome product for young woman. It's make you different look. The collection is limited. We are offering 25% discount. Money back granted.",
         "price": 500,
         "currency": "BDT",
-        "category": "Hand Bag",
+        "category": "Hand-bag",
         "brand": "Queen fashion",
         "image": "../src/assets/allProducts/handBag/bag3.jpg",
         "features": "Long lasting and color granted. Soft and 100% original."
@@ -225,7 +225,7 @@
         "description": "This is an awesome product for young woman. It's make you different look. The collection is limited. We are offering 25% discount. Money back granted.",
         "price": 500,
         "currency": "BDT",
-        "category": "Hand Bag",
+        "category": "Hand-bag",
         "brand": "Queen fashion",
         "image": "../src/assets/allProducts/handBag/bag4.jpg",
         "features": "Long lasting and color granted. Soft and 100% original."
@@ -236,7 +236,7 @@
         "description": "This is an awesome product for young woman. It's make you different look. The collection is limited. We are offering 25% discount. Money back granted.",
         "price": 800,
         "currency": "BDT",
-        "category": "Hand Bag",
+        "category": "Hand-bag",
         "brand": "Queen fashion",
         "image": "../src/assets/allProducts/handBag/bag5.jpg",
         "features": "Long lasting and color granted. Soft and 100% original."
@@ -313,7 +313,7 @@
         "description": "This is an awesome product for young woman. It's make you different look. The collection is limited. We are offering 25% discount. Money back granted.",
         "price": 1200,
         "currency": "BDT",
-        "category": "Pussy cat",
+        "category": "Cat",
         "brand": "Kron collection",
         "image": "../src/assets/allProducts/pussyCat/cat1.jpg",
         "features": "Long lasting and color granted. Soft and 100% original."
@@ -324,7 +324,7 @@
         "description": "This is an awesome product for young woman. It's make you different look. The collection is limited. We are offering 25% discount. Money back granted.",
         "price": 1400,
         "currency": "BDT",
-        "category": "Pussy cat",
+        "category": "Cat",
         "brand": "Kron collection",
         "image": "../src/assets/allProducts/pussyCat/cat2.jpg",
         "features": "Long lasting and color granted. Soft and 100% original."
@@ -335,7 +335,7 @@
         "description": "This is an awesome product for young woman. It's make you different look. The collection is limited. We are offering 25% discount. Money back granted.",
         "price": 1800,
         "currency": "BDT",
-        "category": "Pussy cat",
+        "category": "Cat",
         "brand": "Kron collection",
         "image": "../src/assets/allProducts/pussyCat/cat3.jpg",
         "features": "Long lasting and color granted. Soft and 100% original."
@@ -346,7 +346,7 @@
         "description": "This is an awesome product for young woman. It's make you different look. The collection is limited. We are offering 25% discount. Money back granted.",
         "price": 1800,
         "currency": "BDT",
-        "category": "Pussy cat",
+        "category": "Cat",
         "brand": "Kron collection",
         "image": "../src/assets/allProducts/pussyCat/cat4.jpg",
         "features": "Long lasting and color granted. Soft and 100% original."
@@ -357,7 +357,7 @@
         "description": "This is an awesome product for young woman. It's make you different look. The collection is limited. We are offering 25% discount. Money back granted.",
         "price": 1900,
         "currency": "BDT",
-        "category": "Skirt full",
+        "category": "Skirt",
         "brand": "Zozo fashion",
         "image": "../src/assets/allProducts/scurt/scurt1.jpg",
         "features": "Long lasting and color granted. Soft and 100% original."
@@ -368,7 +368,7 @@
         "description": "This is an awesome product for young woman. It's make you different look. The collection is limited. We are offering 25% discount. Money back granted.",
         "price": 1700,
         "currency": "BDT",
-        "category": "Skirt full",
+        "category": "Skirt",
         "brand": "Zozo fashion",
         "image": "../src/assets/allProducts/scurt/scurt2.jpg",
         "features": "Long lasting and color granted. Soft and 100% original."
@@ -379,7 +379,7 @@
         "description": "This is an awesome product for young woman. It's make you different look. The collection is limited. We are offering 25% discount. Money back granted.",
         "price": 1700,
         "currency": "BDT",
-        "category": "Skirt full",
+        "category": "Skirt",
         "brand": "Zozo fashion",
         "image": "../src/assets/allProducts/scurt/scurt3.jpg",
         "features": "Long lasting and color granted. Soft and 100% original."
@@ -390,7 +390,7 @@
         "description": "This is an awesome product for young woman. It's make you different look. The collection is limited. We are offering 25% discount. Money back granted.",
         "price": 1700,
         "currency": "BDT",
-        "category": "Skirt full",
+        "category": "Skirt",
         "brand": "Zozo fashion",
         "image": "../src/assets/allProducts/scurt/scurt4.jpg",
         "features": "Long lasting and color granted. Soft and 100% original."

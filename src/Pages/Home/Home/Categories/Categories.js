@@ -22,28 +22,6 @@ const Categories = () => {
         <div >
             <h1 className='text-3xl font-semibold my-7'>Select Categories</h1>
 
-            <select className='select select-secondary w-2/5'>
-                <option value="" selected>All</option>
-                <option value="">
-                    Thami
-                </option>
-                <option value="">
-                    T-shirt
-                </option>
-                <option value="">
-                    Skirt
-                </option>
-                <option value="">
-                    Hand bag
-                </option>
-                <option value="">
-                    Pussy cat
-                </option>
-                <option value="">
-                    Nailpalish
-                </option>
-            </select>
-
             {/* <div className='flex border-dotted border-2 border-sky-500 gap-x-7 p-3 rounded-md bg-[#a8dadc]'>
                 {
                     brands?.map(brand =>

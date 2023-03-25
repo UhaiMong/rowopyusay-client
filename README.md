@@ -1,8 +1,8 @@
-# <strong>Rowopyusay-A e-commerce web app</strong>
+# **Rowopyusay-A e-commerce web app**
 
-## Technologies
+## **Technologies**
 
-<ul>
+<ol>
     <li>HTML5 and CSS3</li>
     <li>REACT JS</li>
     <li>NODE JS,EXPRESS JS and MongoDB</li>
@@ -13,19 +13,40 @@
     <li>MaterialUI</li>
     <li>React-icons</li>
     <li>Google fonts</li>
-</ul>
+    <li>Payment gateway--stripe</li>
+</ol>
 
-## To Start this project run below command
-<code>
-npm install<br>
+## **Functionality**
+
+<ol>
+<li>Login/Signup</li>
+<li>Add product to advertise</li>
+<li>Add to cart</li>
+<li>Buy product</li>
+<li>Product cancel</li>
+<li>Order confirm</li>
+<li>Delete product by admin</li>
+</ol>
+
+## **To Start this project run below command**
+
+```
+npm install
 npm start
-</code>
-</hr>
+```
 
-# Live site:
+---
 
-## [visit](comming:soon)
+# **Blog**
 
-# Goto Server site:
+## [React key topics](https://medium.com/@uhaimarma2016/if-you-a-developer-you-must-be-known-react-js-those-key-topics-373d2728537d)
 
-## [Click here to see server repository](https://comingsoon!)
+# **Live site**
+
+## [visit](https://rokpyusay.web.app)
+
+# **Goto Server site**
+
+## [Click here to see server repository](https://github.com/UhaiMong/rowopyusay-client.git)
+
+---
