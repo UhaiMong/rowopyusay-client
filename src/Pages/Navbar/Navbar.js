@@ -3,6 +3,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/icon/logo.png'
 import { AuthContext } from '../../Context/Authprovider';
+import { ImCart } from 'react-icons/im';
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
 
@@ -15,7 +16,7 @@ const Navbar = () => {
             return data
         }
     });
-    console.log(allUser);
+    // console.log(allUser);
     const handleLogout = () => {
         logOut()
             .then(() => { })
@@ -30,7 +31,10 @@ const Navbar = () => {
         <Link to='/advertisement'>Advertisement</Link>
         <Link to='/addProduct'>Add Products</Link>
         <Link to='/myProducts'>My Products</Link>
-        <Link to='/orderedProduct'>My Orders</Link>
+        <Link to='/history'>History</Link>
+        <button>
+            <Link to="/orderedProduct"><ImCart/></Link>
+        </button>
         {
             user?.uid ?
                 <>

@@ -33,7 +33,8 @@ const Advertisement = () => {
             <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4'>
                 {
                     products &&
-                    products?.map(product => <div className="bg-primary shadow-2xl my-4 flex flex-col justify-between p-3 rounded-lg"
+                    products?.map(product =>
+                        <div className="bg-neutral shadow-xl hover:shadow-2xl my-4 flex flex-col justify-between p-3 rounded-lg"
                         key={product._id}
                     >
 
@@ -44,9 +45,9 @@ const Advertisement = () => {
                         <div className="text-white">
                             <h2 className="text-xl font-semibold">{product.brand}</h2>
 
-                            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 justify-between items-center'>
+                            <div className='flex flex-col items-start'>
                                 <p>Location: {product.location}</p>
-                                <p className='line-through text-neutral'>Tk: {product.originalPrice}</p>
+                                <p className='line-through'>Tk: {product.originalPrice}</p>
                                 <p>Used: {product.usedTime}</p>
                                 <p className='font-semibold'>Tk: {product.resalePrice}</p>
                                 <p>Posted: {product.postedDate}</p>

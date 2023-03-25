@@ -10,14 +10,18 @@ const Products = () => {
     const { data: products, isLoading } = useQuery({
         queryKey: ['allProducts'],
         queryFn: async () => {
-            const res = await fetch("products.json");
+            const res = await fetch("products.json", {
+                headers: {
+                    authorization:`Bearer ${localStorage.getItem('accessToken')}`
+                }
+            });
             const data = await res.json();
             return data
         }
     })
 
     const filterCategory = filterProduct === "All" ? products : products.filter((item) => item.category === filterProduct)
-    console.log(filterCategory);
+    // console.log(filterCategory);
     const handleSelect = () => {
         let options = document.getElementById("userSelect").value;
         setFilterProduct(options)
@@ -35,7 +39,7 @@ const Products = () => {
                     id="userSelect"
                     className='select select-secondary w-2/5'
                 >
-                    <option value="All" selected>All</option>
+                    <option defaultValue="All">All</option>
                     <option value="Thami">
                         Thami
                     </option>
