@@ -7,9 +7,9 @@ import { ImCart } from 'react-icons/im';
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
 
-    const url = `https://smart-resale-stall-server.vercel.app/users`;
-    const { data: allUser, refetch } = useQuery({
-        queryKey: ["allUser"],
+    const url = `http://localhost:8000/users`;
+    const { data: users } = useQuery({
+        queryKey: ["users"],
         queryFn: async () => {
             const res = await fetch(url);
             const data = await res.json();
@@ -33,7 +33,7 @@ const Navbar = () => {
         <Link to='/myProducts'>My Products</Link>
         <Link to='/history'>History</Link>
         <button>
-            <Link to="/orderedProduct"><ImCart/></Link>
+            <Link to="/orderedProduct"><ImCart /></Link>
         </button>
         {
             user?.uid ?
@@ -43,9 +43,7 @@ const Navbar = () => {
                 :
                 <Link to='/login'>Login</Link>
         }
-        {
-            user?.uid === 'febHPbFGPchVYjUObWXdNClG9Ef1' && <Link to='/dashboard'>Dashboard</Link>
-        }
+        <Link to='/dashboard'>Dashboard</Link>
     </>
 
 

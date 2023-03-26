@@ -5,7 +5,7 @@ export const useToken = email => {
 
     useEffect(() => {
         if (email) {
-            fetch(`https://smart-resale-stall-server.vercel.app/jwt?email=${email}`)
+            fetch(`http://localhost:8000/jwt?email=${email}`)
                 .then(res => res.json())
                 .then(data => {
                     if (data.accessToken) {

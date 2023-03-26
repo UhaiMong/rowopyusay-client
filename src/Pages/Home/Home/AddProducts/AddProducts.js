@@ -18,7 +18,7 @@ const AddProducts = () => {
 
         formData.append('image', image);
 
-        fetch(`https://api.imgbb.com/1/upload?key=${imghostkey}`, {
+        fetch(`https://api.imgbb.com/1/upload?key=772bced4f7f07efa27de0ecfb3dae49a`, {
             method: 'POST',
             body: formData
         })
@@ -43,7 +43,7 @@ const AddProducts = () => {
 
                     // addProducts to database collection
 
-                    fetch('https://smart-resale-stall-server.vercel.app/addedProducts', {
+                    fetch('http://localhost:8000/addedProducts', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',
@@ -79,7 +79,7 @@ const AddProducts = () => {
                         <select className="select select-bordered w-full"
                             {...register('brand', { required: "Please select one" })}
                         >
-                            <option selected disabled >Choice Brand</option>
+                            <option defaultValue="Choice Brand<" disabled >Choice Brand</option>
                             <option>Sennheiser</option>
                             <option>Bose</option>
                             <option>Sony</option>
@@ -93,7 +93,7 @@ const AddProducts = () => {
                         <select className="select select-bordered w-full"
                             {...register('condition', { required: "Please select one" })}
                         >
-                            <option selected disabled >Choice Condition</option>
+                            <option defaultValue="Choice Condition" disabled >Choice Condition</option>
                             <option>Excellent</option>
                             <option>Good</option>
                             <option>Fair</option>

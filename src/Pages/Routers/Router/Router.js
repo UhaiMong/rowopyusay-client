@@ -38,7 +38,7 @@ export const routers = createBrowserRouter([
             {
                 path: '/myOrders/:id',
                 element: <Privaterout><Myorders></Myorders></Privaterout>,
-                loader: ({ params }) => fetch(`https://smart-resale-stall-server.vercel.app/orderedProducts/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:8000/orderedProducts/${params.id}`)
             },
             {
                 path: '/blogs',
@@ -47,7 +47,7 @@ export const routers = createBrowserRouter([
             {
                 path: '/myProducts',
                 element: <Privaterout>
-                    <MyProducts/>
+                    <MyProducts />
                 </Privaterout>
             },
             {
@@ -61,7 +61,7 @@ export const routers = createBrowserRouter([
             {
                 path: '/selectedBrand/:id',
                 element: <Privaterout><SelectedBrand></SelectedBrand></Privaterout>,
-                loader: ({ params }) => fetch(`https://smart-resale-stall-server.vercel.app/allBrandsProducts/${params.id}`),
+                loader: ({ params }) => fetch(`http://localhost:8000/allBrandsProducts/${params.id}`),
             },
             {
                 path: '/signup',

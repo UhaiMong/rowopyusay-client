@@ -7,7 +7,7 @@ const OrderedProducts = () => {
     const { user } = useContext(AuthContext);
 
     console.log(user.email);
-    const url = `https://smart-resale-stall-server.vercel.app/specificBuyer?email=${user.email}`;
+    const url = `http://localhost:8000/specificBuyer?email=${user.email}`;
     const { data: orderedProducts, refetch } = useQuery({
         queryKey: ["orderedProducts"],
         queryFn: async () => {
@@ -20,7 +20,7 @@ const OrderedProducts = () => {
     const handleDelete = (_id) => {
         const confirmation = window.confirm(`Are you sure that want to delete`)
         if (confirmation) {
-            fetch(`https://smart-resale-stall-server.vercel.app/buyers/${_id}`, {
+            fetch(`http://localhost:8000/buyers/${_id}`, {
                 method: 'DELETE',
             })
                 .then(res => res.json())

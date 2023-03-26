@@ -58,19 +58,18 @@ const ProductCard = ({ product }) => {
                         Add to Cart
                     </button>
 
-                    <label htmlFor="my-modal-6" className="btn">open modal</label>
+                    <label htmlFor="my-modal-6" className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded">Buy</label>
+
                     <Link
                         to={`/myOrders/${product?.product_id}`}
                     >
-                        <button
-                            className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded">
-                            Buy
-                        </button>
                     </Link>
 
                 </div>
             </CardContent>
-            <Modal/>
+            <Modal
+                product={product}
+            />
         </Card>
     );
 };

@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Outlet } from 'react-router';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../Context/Authprovider';
+import useAdmin from '../Hooks/useAdmin';
 import Navbar from '../Pages/Navbar/Navbar';
 
 const DashboardLayout = () => {
+    const user = useContext(AuthContext)
+    const [isAdmin] = useAdmin(user?.email)
     return (
         <div>
             <Navbar></Navbar>
@@ -15,9 +19,18 @@ const DashboardLayout = () => {
                 <div className="drawer-side">
                     <label htmlFor="dashboard-menu" className="drawer-overlay"></label>
                     <ul className="menu p-4 bg-base-100 text-base-content">
-                       
-                        <li><Link to='/dashboard'>Sellers</Link></li>
-                        <li><Link to='/dashboard/buyers'>Buyers</Link></li>
+
+                        {
+                            isAdmin &&
+                            <>
+                                <li>
+                                    <Link to='/dashboard'>Sellers</Link>
+                                </li>
+                                <li>
+                                    <Link to='/dashboard/buyers'>Buyers</Link>
+                                </li>
+                            </>
+                        }
                     </ul>
                 </div>
             </div>
